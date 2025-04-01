@@ -300,25 +300,6 @@
 
 
 <script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyA3nt8aHCm5LH60SyBH6MSYHpLBUtcqZrw",
-    authDomain: "lama-68c61.firebaseapp.com",
-    projectId: "lama-68c61",
-    storageBucket: "lama-68c61.appspot.com",
-    messagingSenderId: "620875338283",
-    appId: "1:620875338283:web:dc779e3e11d4a52da6906e",
-    measurementId: "G-F77738ELVK"
-  };
-
-  firebase.initializeApp(firebaseConfig);
-
-  firebase.auth().onAuthStateChanged((user) => {
-    if (!user) {
-      window.location.replace('https://jeffvscblogs.github.io/forms/lamasigni/');
-    } else {
-      initializeApp();
-    }
-  });
 
   function initializeApp() {
     let data = { folders: [] };
